@@ -1,0 +1,13 @@
+// Initialize Feather icons
+feather.replace();
+
+// Toggle menu for mobile view
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        hamburger.classList.toggle('toggle');
+    });
+});

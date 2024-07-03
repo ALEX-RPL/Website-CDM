@@ -1,0 +1,293 @@
+/* Global styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* hamburger menu styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.hamburger i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.hamburger.toggle i {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+/* Section styles */
+section {
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* Home section styles */
+.home-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('image/WhatsApp Image 2024-07-02 at 08.57.31_0ae64d40.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transparent-background {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 31vh;
+  border-radius: 0px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.transparent-background h2, .transparent-background p {
+  position: relative;
+  z-index: 9999;
+}
+
+.home-section h2 {
+  font-size: 2rem;
+  font-weight: 400; ;
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* Blue section styles */
+.blue-section {
+  background-color: #add8e6;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.blue-section h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.blue-section p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.struktur-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.struktur-row {
+  display: flex;
+  justify-content: center;
+}
+
+.person {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.person img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.person p {
+  margin: 0.5rem 0;
+  font-weight: 200;
+}
+
+/* Galery section styles */
+.galery-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.galery-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Contact section styles */
+#contact {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+#contact ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#contact ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 1rem;
+}
+
+.social-icons li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social-icons li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin: 0 1rem;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+  }
+
+  nav ul.nav-active {
+      display: flex;
+  }
+
+  .hamburger {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+  }
+
+  .struktur-row {
+      flex-direction: column;
+  }
+
+  .galery-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .transparent-background {
+      padding: 20%;
+  }
+}
